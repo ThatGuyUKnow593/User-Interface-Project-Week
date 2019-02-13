@@ -139,6 +139,38 @@ html {
   font-size: 62.5%;
 }
 /* connecting to navigation and footer files */
+html .footer {
+  background-color: #828282;
+  color: #FFFFFF;
+}
+html .footer .footerContent {
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+}
+html .footer .footerContent h2 {
+  font-size: 2rem;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+html .footer .footerContent .email p {
+  margin-top: 15px;
+}
+html .footer .footerContent .email input {
+  color: gray;
+  height: 30px;
+  width: 315px;
+  border-radius: 5px;
+}
+html .footer .footerContent address {
+  font-size: 1.4rem;
+  line-height: 20px;
+}
+html .footer #copyright {
+  width: 100%;
+  font-size: 1.6rem;
+  text-align: center;
+}
 /* connecting to page files */
 html .container {
   display: flex;
