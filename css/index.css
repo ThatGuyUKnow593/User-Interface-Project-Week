@@ -139,7 +139,7 @@ html {
   font-size: 62.5%;
 }
 /* connecting to navigation and footer files */
-html .container .nav {
+html .nav {
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -152,14 +152,15 @@ html .container .nav {
   width: 100%;
   background-color: #828282;
   height: 50px;
+  z-index: 5;
 }
-html .container .nav h1 {
+html .nav h1 {
   font-size: 24px;
   font-weight: bold;
   color: #FFFFFF;
   margin-left: 5%;
 }
-html .container .nav .navCenteredItems {
+html .nav .navCenteredItems {
   display: none;
   position: absolute;
   height: 100%;
@@ -167,14 +168,14 @@ html .container .nav .navCenteredItems {
   flex-direction: column;
   margin-top: 25%;
 }
-html .container .nav .navCenteredItems a {
+html .nav .navCenteredItems a {
   text-decoration: none;
   text-align: center;
   color: #FFFFFF;
   font-size: 4.8rem;
   margin-bottom: 30px;
 }
-html .container .nav img {
+html .nav img {
   width: 30px;
   height: 25px;
   margin-right: 5%;
@@ -326,4 +327,80 @@ html .container .recentProjects .projectInfo p {
   width: 50%;
   margin: 0 auto;
   padding-top: 15px;
+}
+html .servicesContainer {
+  max-width: 1024px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+html .servicesContainer p {
+  font-size: 16px;
+}
+html .servicesContainer .servicesHeader {
+  position: relative;
+  margin-top: 50px;
+}
+html .servicesContainer .servicesHeader h1 {
+  position: absolute;
+  font-size: 6.4rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  z-index: 1;
+  top: 175px;
+  left: 75px;
+}
+html .servicesContainer .servicesHeader img {
+  z-index: -1;
+}
+html .servicesContainer .servicesContentContainer {
+  max-width: 900px;
+  width: 85%;
+  margin: 0 auto;
+}
+html .servicesContainer .servicesContentContainer .servicesHeadContent {
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  line-height: 28px;
+}
+html .servicesContainer .servicesContentContainer .servicesTabs .servicesBtns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+html .servicesContainer .servicesContentContainer .servicesTabs .servicesBtns button {
+  text-decoration: none;
+  font-size: 2.1rem;
+  width: 22%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: black;
+  border: 1px solid black;
+  text-align: center;
+}
+html .servicesContainer .servicesContentContainer .servicesTabs .servicesContent {
+  margin-bottom: 50px;
+}
+html .servicesContainer .servicesContentContainer .servicesTabs .servicesContent .servicesTabContentTitle {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 100%;
+}
+html .servicesContainer .servicesContentContainer .servicesTabs .servicesContent .servicesTabFullContent {
+  display: flex;
+  justify-content: space-between;
+}
+html .servicesContainer .servicesContentContainer .servicesTabs .servicesContent .servicesTabFullContent .servicesTabContentText {
+  width: 45%;
+}
+html .servicesContainer .servicesContentContainer .servicesTabs .servicesContent .servicesTabFullContent .servicesTabContentText p {
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+html .servicesContainer .servicesContentContainer .servicesTabs .servicesContent .servicesTabFullContent .servicesTabContentImg {
+  width: 45%;
 }

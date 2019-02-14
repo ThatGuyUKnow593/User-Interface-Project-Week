@@ -31,3 +31,25 @@ class NavDropdown {
 }
 
 let nav = document.querySelectorAll('.nav').forEach(navs => new NavDropdown(navs));
+
+class TabLink {
+    constructor(element){
+        this.element = element;
+        
+        this.data = this.element.dataset;
+        
+        this.element.addEventListener('click', ()=> this.selectInfo());
+        
+    }
+
+    selectInfo(){
+        let serviceTabImg = document.querySelectorAll('.serviceContImg');
+        console.log(serviceTabImg);
+
+        if(this.data = 'preConstruction'){
+            serviceTabImg.src = 'img/services/services-tab-pre-construction-img.png';
+        }
+    }
+}
+
+let serviceBtn = document.querySelectorAll('button').forEach(tab => new TabLink(tab));
