@@ -189,10 +189,31 @@ html .footer .footerContent {
   justify-content: space-around;
   height: 200px;
 }
+@media (max-width: 500px) {
+  html .footer .footerContent {
+    flex-direction: column;
+    height: auto;
+  }
+}
 html .footer .footerContent h2 {
   font-size: 2rem;
   margin-top: 50px;
   margin-bottom: 15px;
+}
+@media (max-width: 500px) {
+  html .footer .footerContent h2 {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 500px) {
+  html .footer .footerContent .email {
+    margin-left: 15px;
+    width: 100%;
+  }
+  html .footer .footerContent .email h2 {
+    margin-left: 0px;
+    width: 100%;
+  }
 }
 html .footer .footerContent .email p {
   margin-top: 15px;
@@ -203,14 +224,30 @@ html .footer .footerContent .email input {
   width: 315px;
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  html .footer .footerContent .email input {
+    width: 92%;
+    height: 40px;
+  }
+}
 html .footer .footerContent address {
   font-size: 1.4rem;
   line-height: 20px;
+}
+@media (max-width: 500px) {
+  html .footer .footerContent address {
+    margin-left: 15px;
+  }
 }
 html .footer #copyright {
   width: 100%;
   font-size: 1.6rem;
   text-align: center;
+}
+@media (max-width: 500px) {
+  html .footer #copyright {
+    margin-top: 15px;
+  }
 }
 /* connecting to page files */
 html .container {

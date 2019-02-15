@@ -2,19 +2,39 @@ html {
 		.footer {
 			background-color: #828282;
 			color: #FFFFFF;
-			
+
 			.footerContent{
 				display: flex;
 				justify-content: space-around;
 				height: 200px;
 
+				@media @phone {
+					flex-direction: column;
+					height: auto;
+				}
+
 				h2{
 						font-size: 2rem;
 						margin-top: 50px;
 						margin-bottom: 15px;
+
+						@media @phone {
+							margin-left: 15px;
+						}
 				}
 
 				.email{
+
+					@media @phone {
+						margin-left: 15px;
+						width: 100%;
+
+						h2 {
+							margin-left: 0px;
+							width: 100%;
+						}
+					}
+
 					p{
 						margin-top: 15px;
 					}
@@ -24,12 +44,21 @@ html {
 						height: 30px;
 						width: 315px;
 						border-radius: 5px;
+
+						@media @phone {
+							width: 92%;
+							height: 40px;
+						}
 					}
 				}
 
 				address{
 					font-size: 1.4rem;
 					line-height: 20px;
+
+					@media @phone {
+						margin-left: 15px;
+					}
 				}
 			}
 
@@ -37,6 +66,10 @@ html {
 				width: 100%;
 				font-size: 1.6rem;
 				text-align: center;
+
+				@media @phone {
+					margin-top: 15px;
+				}
 			}
 		}
 }
