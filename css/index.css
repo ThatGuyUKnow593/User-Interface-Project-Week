@@ -200,6 +200,7 @@ html .nav img {
 html .footer {
   background-color: #828282;
   color: #FFFFFF;
+  margin-top: 25px;
 }
 @media (max-width: 500px) {
   html .footer {
@@ -232,9 +233,13 @@ html .footer .footerContent h2 {
     margin-left: 15px;
     width: 100%;
   }
+}
+@media (max-width: 500px) {
   html .footer .footerContent .email h2 {
-    margin-left: 0px;
     width: 100%;
+    font-size: 2.8rem;
+    line-height: 34px;
+    margin-left: -2.5px;
   }
 }
 html .footer .footerContent .email p {
@@ -259,6 +264,8 @@ html .footer .footerContent address {
 @media (max-width: 500px) {
   html .footer .footerContent address {
     margin-left: 15px;
+    font-size: 1.8rem;
+    line-height: 26px;
   }
 }
 html .footer #copyright {
@@ -307,14 +314,14 @@ html .container .header .headText {
   font-size: 6.4rem;
   color: #FFFFFF;
   position: absolute;
-  top: 350px;
+  top: 375px;
   left: 75px;
 }
 @media (max-width: 500px) {
   html .container .header .headText {
     text-align: left;
     font-size: 6rem;
-    top: 130px;
+    top: 175px;
     left: 30px;
   }
 }
@@ -335,10 +342,21 @@ html .container .main {
   padding-top: 50px;
   padding-bottom: 75px;
 }
+@media (max-width: 500px) {
+  html .container .main {
+    margin-top: -25px;
+  }
+}
 html .container .main h2 {
   font-size: 2.8rem;
   margin-top: 40px;
   margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  html .container .main p {
+    font-size: 2rem;
+    line-height: 30px;
+  }
 }
 html .container .main a {
   text-decoration: none;
@@ -352,7 +370,7 @@ html .container .main a {
 }
 @media (max-width: 500px) {
   html .container .main a {
-    width: 100%;
+    width: 95%;
     height: 25px;
     font-size: 2rem;
     padding-top: 12.5px;
@@ -375,7 +393,8 @@ html .container .main .text {
 }
 @media (max-width: 500px) {
   html .container .main .text {
-    width: 95%;
+    width: 100%;
+    margin: 0;
     order: 1;
   }
 }
@@ -400,7 +419,7 @@ html .container .recentProjects {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 0 auto;
+  margin-left: 5%;
 }
 @media (max-width: 500px) {
   html .container .recentProjects {
@@ -419,7 +438,7 @@ html .container .recentProjects h3 {
   }
 }
 html .container .recentProjects .projectInfo {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   margin: 0 auto;
 }
 @media (max-width: 500px) {
@@ -430,11 +449,13 @@ html .container .recentProjects .projectInfo {
 html .container .recentProjects .projectInfo img {
   position: absolute;
   z-index: -1;
+  margin-top: 20px;
 }
 @media (max-width: 500px) {
   html .container .recentProjects .projectInfo img {
     max-width: 500px;
     width: 100%;
+    margin-top: 0px;
   }
 }
 html .container .recentProjects .projectInfo h2 {
@@ -447,7 +468,7 @@ html .container .recentProjects .projectInfo h2 {
   width: 35%;
   height: 65px;
   padding-top: 20px;
-  margin-left: 57.5%;
+  margin-left: 48.25%;
 }
 @media (max-width: 500px) {
   html .container .recentProjects .projectInfo h2 {
@@ -485,7 +506,9 @@ html .container .recentProjects .projectInfo p {
 }
 @media (max-width: 500px) {
   html .container .recentProjects .projectInfo p {
-    width: 85%;
+    font-size: 2rem;
+    line-height: 30px;
+    width: 75%;
   }
 }
 html .servicesContainer {
