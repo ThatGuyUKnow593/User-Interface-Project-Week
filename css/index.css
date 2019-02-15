@@ -223,6 +223,11 @@ html .container {
   /* Smith & Jones and Futuristic Designs Styling */
   /* Recent Projects Styling */
 }
+@media (max-width: 500px) {
+  html .container {
+    width: 100%;
+  }
+}
 html .container p {
   font-size: 1.6rem;
 }

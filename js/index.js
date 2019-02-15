@@ -38,7 +38,6 @@ let nav = document.querySelectorAll('.nav').forEach(navs => new NavDropdown(navs
 
 //Enter Email automatically delete text onClick
 
-
 let emailEnter = document.querySelector('input');
 
 emailEnter.addEventListener('click', () =>{
@@ -46,6 +45,30 @@ emailEnter.addEventListener('click', () =>{
         emailEnter.value = '';
     }
 })
+
+//Home page mobile image changes
+
+if (document.documentElement.clientWidth <= 505){
+    let homeHeader = document.querySelector('#homeHeaderImg');
+    homeHeader.src = 'img/home/home-mobile-jumbotron.png';
+
+    let homeSmith = document.querySelector('#homeSmithImg');
+    homeSmith.src = 'img/home/home-mobile-img-1.png';
+    
+    let homeFuturistic = document.querySelector('#homeFuturisticImg');
+    homeFuturistic.src = 'img/home/home-mobile-img-2.png';
+
+    let homeVillas = document.querySelector('#homeVillasImg');
+    homeVillas.src = 'img/home/home-mobile-villas-img.png';
+
+    let homeOutskirts = document.querySelector('#homeOutskirtsImg');
+    homeOutskirts.src = 'img/home/home-mobile-outskirts-img.png';
+
+    let homeBlocks = document.querySelector('#homeBlocksImg');
+    homeBlocks.src = 'img/home/home-mobile-the-blocks-img.png';
+}
+
+
 
 //services page tabs elements
 class TabLink {
@@ -99,3 +122,4 @@ class TabLink {
 }
 
 let serviceBtn = document.querySelectorAll('button').forEach(tab => new TabLink(tab));
+
