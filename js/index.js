@@ -1,5 +1,7 @@
 // JS goes here
 
+
+//Navigation Code
 class NavDropdown {
   constructor(element){
     this.element = element;
@@ -11,6 +13,7 @@ class NavDropdown {
     this.button.addEventListener('click', () =>{
       this.toggleContent()
     })
+
   }
 
   toggleContent(){
@@ -32,22 +35,65 @@ class NavDropdown {
 
 let nav = document.querySelectorAll('.nav').forEach(navs => new NavDropdown(navs));
 
+
+//Enter Email automatically delete text onClick
+
+
+let emailEnter = document.querySelector('input');
+
+emailEnter.addEventListener('click', () =>{
+    if (emailEnter.value === 'Enter email'){
+        emailEnter.value = '';
+    }
+})
+
+//services page tabs elements
 class TabLink {
     constructor(element){
         this.element = element;
         
-        this.data = this.element.dataset;
+        this.data = this.element.dataset.tab;
+
+        if(this.data === 'construction'){
+            this.element.style.backgroundColor = '#5E9FB9';
+            this.element.style.color = 'white';
+        }
         
         this.element.addEventListener('click', ()=> this.selectInfo());
         
     }
 
     selectInfo(){
-        let serviceTabImg = document.querySelectorAll('.serviceContImg');
-        console.log(serviceTabImg);
+        let serviceTabImg = document.querySelector('.serviceContImg');
+        let serviceTabHead = document.querySelector('.servicesTabContentTitle');
+        let btn = document.querySelectorAll('button').forEach(element =>{
+            element.style.backgroundColor = 'white';
+            element.style.color = 'black';
+        });
+        console.log(this.element);
 
-        if(this.data = 'preConstruction'){
+        
+
+        if(this.data === 'preConstruction'){
             serviceTabImg.src = 'img/services/services-tab-pre-construction-img.png';
+            serviceTabHead.textContent = 'Pre-Construction';
+            this.element.style.backgroundColor = '#5E9FB9';
+            this.element.style.color = 'white';
+        }else if(this.data === 'construction'){
+            serviceTabImg.src = 'img/services/services-tab-construction-img.png';
+            serviceTabHead.textContent = 'Construction';
+            this.element.style.backgroundColor = '#5E9FB9';
+            this.element.style.color = 'white';
+        }else if(this.data === 'design'){
+            serviceTabImg.src = 'img/services/services-tab-design-build-img.png';
+            serviceTabHead.textContent = 'Design Build';
+            this.element.style.backgroundColor = '#5E9FB9';
+            this.element.style.color = 'white';
+        }else {
+            serviceTabImg.src = 'img/services/services-tab-sustainability-img.png';
+            serviceTabHead.textContent = 'Sustainability';
+            this.element.style.backgroundColor = '#5E9FB9';
+            this.element.style.color = 'white';
         }
     }
 }

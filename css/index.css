@@ -380,6 +380,7 @@ html .servicesContainer .servicesContentContainer .servicesTabs .servicesBtns bu
   color: black;
   border: 1px solid black;
   text-align: center;
+  background-color: white;
 }
 html .servicesContainer .servicesContentContainer .servicesTabs .servicesContent {
   margin-bottom: 50px;
