@@ -168,12 +168,18 @@ html .nav .navCenteredItems {
   flex-direction: column;
   margin-top: 25%;
 }
+@media (max-width: 500px) {
+  html .nav .navCenteredItems {
+    justify-content: baseline;
+  }
+}
 html .nav .navCenteredItems a {
   text-decoration: none;
+  font-weight: bold;
   text-align: center;
   color: #FFFFFF;
   font-size: 4.8rem;
-  margin-bottom: 30px;
+  margin-bottom: 25%;
 }
 html .nav img {
   width: 30px;
