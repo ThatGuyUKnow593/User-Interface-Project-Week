@@ -47,14 +47,15 @@ emailEnter.addEventListener('click', () =>{
 })
 
 //Home page mobile image changes
+console.log(document.documentElement.clientWidth);
 
-if (document.documentElement.clientWidth <= 505){
+if (document.documentElement.clientWidth <= 485){
     let homeHeader = document.querySelector('#homeHeaderImg');
     homeHeader.src = 'img/home/home-mobile-jumbotron.png';
 
     let homeSmith = document.querySelector('#homeSmithImg');
     homeSmith.src = 'img/home/home-mobile-img-1.png';
-    
+
     let homeFuturistic = document.querySelector('#homeFuturisticImg');
     homeFuturistic.src = 'img/home/home-mobile-img-2.png';
 
@@ -74,16 +75,16 @@ if (document.documentElement.clientWidth <= 505){
 class TabLink {
     constructor(element){
         this.element = element;
-        
+
         this.data = this.element.dataset.tab;
 
         if(this.data === 'construction'){
             this.element.style.backgroundColor = '#5E9FB9';
             this.element.style.color = 'white';
         }
-        
+
         this.element.addEventListener('click', ()=> this.selectInfo());
-        
+
     }
 
     selectInfo(){
@@ -95,7 +96,7 @@ class TabLink {
         });
         console.log(this.element);
 
-        
+
 
         if(this.data === 'preConstruction'){
             serviceTabImg.src = 'img/services/services-tab-pre-construction-img.png';
@@ -122,4 +123,3 @@ class TabLink {
 }
 
 let serviceBtn = document.querySelectorAll('button').forEach(tab => new TabLink(tab));
-
