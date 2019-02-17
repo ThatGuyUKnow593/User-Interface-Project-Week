@@ -321,8 +321,8 @@ html .container .header .headText {
   html .container .header .headText {
     text-align: left;
     font-size: 6rem;
-    top: 175px;
-    left: 30px;
+    top: 35%;
+    left: 5%;
   }
 }
 html .container .header img {
@@ -344,7 +344,7 @@ html .container .main {
 }
 @media (max-width: 500px) {
   html .container .main {
-    margin-top: -25px;
+    margin-top: -5%;
   }
 }
 html .container .main h2 {
@@ -400,7 +400,7 @@ html .container .main .text {
 }
 html .container .main .smith {
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 15%;
 }
 @media (max-width: 500px) {
   html .container .main .smith {
@@ -443,7 +443,7 @@ html .container .recentProjects .projectInfo {
 }
 @media (max-width: 500px) {
   html .container .recentProjects .projectInfo {
-    margin-bottom: 25px;
+    margin-bottom: 5%;
   }
 }
 html .container .recentProjects .projectInfo img {
@@ -454,8 +454,9 @@ html .container .recentProjects .projectInfo img {
 @media (max-width: 500px) {
   html .container .recentProjects .projectInfo img {
     max-width: 500px;
-    width: 100%;
+    width: 102%;
     margin-top: 0px;
+    margin-left: -5%;
   }
 }
 html .container .recentProjects .projectInfo h2 {
@@ -473,8 +474,8 @@ html .container .recentProjects .projectInfo h2 {
 @media (max-width: 500px) {
   html .container .recentProjects .projectInfo h2 {
     font-size: 3.8rem;
-    margin-left: 12.5%;
-    margin-top: 250px;
+    margin-left: 10%;
+    margin-top: 50%;
     width: 75%;
   }
 }
@@ -494,8 +495,8 @@ html .container .recentProjects .projectInfo h4 {
 @media (max-width: 500px) {
   html .container .recentProjects .projectInfo h4 {
     font-size: 3.8rem;
-    margin-left: 12.5%;
-    margin-top: 250px;
+    margin-left: 10%;
+    margin-top: 50%;
     width: 75%;
   }
 }
