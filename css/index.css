@@ -182,20 +182,29 @@ html .nav .navCenteredItems {
 html .nav .navCenteredItems a {
   text-decoration: none;
   font-weight: bold;
-  text-align: center;
   color: #FFFFFF;
-  font-size: 4.8rem;
+  font-size: 6rem;
   margin-bottom: 30px;
+  margin-left: 35%;
 }
 @media (max-width: 500px) {
   html .nav .navCenteredItems a {
     margin-top: 15%;
   }
 }
+html .nav .navCenteredItems a:hover {
+  color: black;
+}
+html .nav .navCenteredItems #currentPage {
+  color: black;
+}
 html .nav img {
   width: 30px;
   height: 25px;
-  padding-right: 10px;
+  padding-right: 5%;
+}
+html .nav img:hover {
+  cursor: pointer;
 }
 html .footer {
   background-color: #828282;
@@ -281,6 +290,9 @@ html .footer #copyright {
 /* connecting to page files */
 html {
   overflow-x: hidden;
+}
+html a:hover {
+  cursor: pointer;
 }
 html .container {
   display: flex;
