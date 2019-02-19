@@ -589,3 +589,103 @@ html .servicesContainer .servicesContentContainer .servicesTabs .servicesContent
 html .servicesContainer .servicesContentContainer .servicesTabs .servicesContent .servicesTabFullContent .servicesTabContentImg {
   width: 45%;
 }
+html .contactContainer {
+  max-width: 1024px;
+  width: 100%;
+  margin-left: 15%;
+  display: flex;
+  flex-direction: column;
+}
+html .contactContainer .contactHead {
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+  z-index: -1;
+}
+html .contactContainer .contactHead h1 {
+  font-size: 6.4rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+}
+html .contactContainer .contactHead img {
+  width: 100%;
+}
+html .contactContainer .contactContent {
+  margin-left: 10%;
+  margin-top: 5%;
+  display: flex;
+}
+html .contactContainer .contactContent .form {
+  width: 40%;
+}
+html .contactContainer .contactContent .form h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+html .contactContainer .contactContent .form p {
+  color: black;
+  font-size: 1.8rem;
+  margin-bottom: 2%;
+}
+html .contactContainer .contactContent .form h4 {
+  color: #828282;
+  margin-bottom: 10%;
+  margin-top: 10px;
+}
+html .contactContainer .contactContent .form input {
+  width: 100%;
+  color: #828282;
+}
+html .contactContainer .contactContent .form select {
+  width: 100%;
+  margin-bottom: 10%;
+}
+html .contactContainer .contactContent .form textarea {
+  width: 100%;
+}
+html .contactContainer .contactContent .form .iAm {
+  position: relative;
+  margin-top: 3%;
+}
+html .contactContainer .contactContent .form .iAm input {
+  margin-left: -45%;
+  margin-bottom: 10px;
+}
+html .contactContainer .contactContent .form .iAm .iAmCon {
+  position: absolute;
+  left: 10%;
+  top: 1%;
+}
+html .contactContainer .contactContent .form .iAm .iAmCon p {
+  margin-bottom: 10px;
+}
+html .contactContainer .contactContent .form #submit {
+  width: 20%;
+  color: black;
+  text-align: center;
+  padding: 10px 5px 10px 5px;
+  margin-top: 30px;
+}
+html .contactContainer .contactContent .contactLocations {
+  width: 40%;
+  margin-left: 15%;
+}
+html .contactContainer .contactContent .contactLocations h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+html .contactContainer .contactContent .contactLocations h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+html .contactContainer .contactContent .contactLocations address {
+  font-size: 1.6rem;
+  margin-bottom: 10%;
+  line-height: 20px;
+}
