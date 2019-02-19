@@ -578,6 +578,9 @@ html .servicesContainer .servicesContentContainer .servicesTabs .servicesBtns bu
   text-align: center;
   background-color: white;
 }
+html .servicesContainer .servicesContentContainer .servicesTabs .servicesBtns button:hover {
+  cursor: pointer;
+}
 html .servicesContainer .servicesContentContainer .servicesTabs .servicesContent {
   margin-bottom: 50px;
 }
