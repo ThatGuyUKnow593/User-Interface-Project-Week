@@ -1,0 +1,240 @@
+html{
+
+		overflow-x: hidden;
+
+	.container{
+		display: flex;
+		flex-direction: column;
+		max-width: 1024px;
+		width: 100%;
+		margin: 0 auto;
+
+		@media @phone {
+			width: 100%;
+			justify-content: center;
+			margin: 0;
+		}
+
+		p {
+			font-size: 1.6rem;
+			line-height: 24px;
+		}
+
+		/* Header Styling */
+		.header{
+			position: relative;
+			text-align: center;
+			margin-top: 50px;
+			z-index: -1;
+
+
+			.headText{
+				font-weight: bold;
+				font-size: 6.4rem;
+				color: #FFFFFF;
+				position: absolute;
+				top: 375px;
+				left: 75px;
+
+				@media @phone {
+					text-align: left;
+					font-size: 6rem;
+					top: 35%;
+					left: 5%;
+				}
+			}
+
+			img {
+				width: 100%;
+
+				@media @phone {
+					max-width: 500px;
+				}
+			}
+
+		}
+
+		/* Smith & Jones and Futuristic Designs Styling */
+		.main {
+			display: flex;
+			flex-direction: column;
+			align-items: baseline;
+			width: 90%;
+			margin: 0 auto;
+			padding-top: 50px;
+			padding-bottom: 75px;
+
+			@media @phone {
+				margin-top: -5%;
+			}
+
+			h2 {
+				font-size: 2.8rem;
+				margin-top: 40px;
+				margin-bottom: 20px;
+			}
+
+			p {
+				@media @phone {
+					font-size: 2rem;
+					line-height: 30px;
+				}
+			}
+
+			a {
+				text-decoration: none;
+				text-align: center;
+				color: black;
+				border: 1px solid #222222;
+				font-size: 1.6rem;
+				padding: 10px;
+				width: 125px;
+				margin-top: 35px;
+
+				@media @phone {
+					width: 95%;
+					height: 25px;
+					font-size: 2rem;
+					padding-top: 12.5px;
+				}
+			}
+
+			img {
+				width: 45%;
+
+				@media @phone{
+					width: 100%;
+					order: 0;
+				}
+			}
+
+			.text {
+				display: flex;
+				flex-direction: column;
+				width: 40%;
+				margin: 0px 20px 0px 20px;
+
+				@media @phone {
+					width: 100%;
+					margin: 0;
+					order: 1;
+				}
+			}
+
+			.smith{
+				display: flex;
+				margin-bottom: 15%;
+
+				@media @phone {
+					flex-direction: column;
+				}
+			}
+
+			.designs{
+				display: flex;
+
+				@media @phone {
+					flex-direction: column;
+				}
+			}
+		}
+
+		/* Recent Projects Styling */
+		.recentProjects {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			margin-left: 5%;
+
+			@media @phone {
+				max-width: 500px;
+				width: 100%;
+			}
+
+			h3 {
+				font-weight: bold;
+				font-size: 2.8rem;
+				margin-bottom: 40px;
+
+				@media @phone {
+					margin-left: 5%;
+				}
+			}
+
+			.projectInfo {
+				margin-bottom: 100px;
+				margin: 0 auto;
+
+				@media @phone {
+						margin-bottom: 5%;
+				}
+
+				img{
+					position: absolute;
+					z-index: -1;
+					margin-top: 20px;
+
+					@media @phone {
+						max-width: 500px;
+						width: 102%;
+						margin-top: 0px;
+						margin-left: -5%;
+					}
+				}
+
+				h2 {
+					text-align: center;
+					font-size: 4rem;
+					margin-bottom: 20px;
+					margin-top: 175px;
+					background-color: #D8D8D8;
+					border: 2px solid white;
+					width: 35%;
+					height: 65px;
+					padding-top: 20px;
+					margin-left: 48.25%;
+
+					@media @phone {
+						font-size: 3.8rem;
+						margin-left: 10%;
+						margin-top: 50%;
+						width: 75%;
+					}
+				}
+
+				h4 {
+					text-align: left;
+					font-weight: normal;
+					font-size: 4rem;
+					margin-bottom: 20px;
+					margin-top: 175px;
+					background-color: #D8D8D8;
+					border: 2px solid white;
+					text-align: center;
+					width: 35%;
+					height: 65px;
+					padding-top: 20px;
+
+					@media @phone {
+						font-size: 3.8rem;
+						margin-left: 10%;
+						margin-top: 50%;
+						width: 75%;
+					}
+				}
+
+				p {
+					width: 50%;
+					margin: 0 auto;
+					padding-top: 15px;
+
+					@media @phone {
+						font-size: 2rem;
+						line-height: 30px;
+						width: 75%;
+					}
+				}
+			}
+		}
+	}
+}
